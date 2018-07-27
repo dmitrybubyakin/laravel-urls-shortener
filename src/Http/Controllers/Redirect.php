@@ -5,9 +5,9 @@ namespace DmitryBubyakin\Shortener\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Http\RedirectResponse;
 
-class ShortenerController
+class Redirect
 {
-    public function handle(Request $request): RedirectResponse
+    public function __invoke(Request $request): RedirectResponse
     {
         return response()->redirectTo(
             app('shortener')->getRedirectTo($request->hash)

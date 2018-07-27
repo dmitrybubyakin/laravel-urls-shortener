@@ -4,7 +4,6 @@ namespace DmitryBubyakin\Shortener;
 
 use Hashids\Hashids;
 use Illuminate\Support\Facades\Route;
-use DmitryBubyakin\Shortener\Http\Controllers\ShortenerController;
 
 class Shortener
 {
@@ -36,6 +35,6 @@ class Shortener
 
     public function routes(): void
     {
-        Route::get("{$this->route}/{hash}", ShortenerController::class.'@handle');
+        Route::get("{$this->route}/{hash}", '\DmitryBubyakin\Shortener\Http\Controllers\Redirect');
     }
 }
