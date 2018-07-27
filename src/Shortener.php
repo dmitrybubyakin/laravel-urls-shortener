@@ -36,6 +36,6 @@ class Shortener
 
     public function routes(): void
     {
-        Route::get("{$this->route}/{hash}", ShortenerController::class . '@handle');
+        Route::get("{$this->route}/{hash}", ShortenerController::class.'@handle');
     }
 }
