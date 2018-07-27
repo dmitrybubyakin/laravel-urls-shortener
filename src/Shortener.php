@@ -2,9 +2,9 @@
 
 namespace DmitryBubyakin\Shortener;
 
-use DmitryBubyakin\Shortener\Http\Controllers\ShortenerController;
 use Hashids\Hashids;
 use Illuminate\Support\Facades\Route;
+use DmitryBubyakin\Shortener\Http\Controllers\ShortenerController;
 
 class Shortener
 {
