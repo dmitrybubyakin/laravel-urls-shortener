@@ -3,8 +3,8 @@
 namespace DmitryBubyakin\Shortener\Tests;
 
 use DmitryBubyakin\Shortener\Shortener;
-use DmitryBubyakin\Shortener\UrlsShortenerServiceProvider;
 use Orchestra\Testbench\TestCase as Orchestra;
+use DmitryBubyakin\Shortener\UrlsShortenerServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -24,7 +24,7 @@ class TestCase extends Orchestra
     protected function getPackageProviders($app)
     {
         return [
-            UrlsShortenerServiceProvider::class
+            UrlsShortenerServiceProvider::class,
         ];
     }
 
@@ -40,7 +40,7 @@ class TestCase extends Orchestra
 
     protected function setUpDatabase($app)
     {
-        include_once __DIR__ . '/../database/migrations/create_short_urls_table.php.stub';
+        include_once __DIR__.'/../database/migrations/create_short_urls_table.php.stub';
 
         (new \CreateShortUrlsTable())->up();
     }

@@ -10,7 +10,7 @@ class UrlsShortenerServiceProvider extends ServiceProvider
     public function boot(): void
     {
         $this->publishes([
-            __DIR__ . '/../config/config.php' => config_path('laravel-urls-shortener.php'),
+            __DIR__.'/../config/config.php' => config_path('laravel-urls-shortener.php'),
         ]);
 
         if (! class_exists('CreateShortUrlsTable')) {
@@ -22,7 +22,7 @@ class UrlsShortenerServiceProvider extends ServiceProvider
 
     public function register(): void
     {
-        $this->mergeConfigFrom(__DIR__ . '/../config/config.php', 'laravel-urls-shortener');
+        $this->mergeConfigFrom(__DIR__.'/../config/config.php', 'laravel-urls-shortener');
 
         $this->app->bind(Shortener::class, function () {
             $hash = $this->createHashids();

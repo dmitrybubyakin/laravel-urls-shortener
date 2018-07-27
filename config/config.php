@@ -2,7 +2,7 @@
 
 return [
 
-    /**
+    /*
      * https://github.com/ivanakimov/hashids.php/blob/master/src/Hashids.php#L101
      */
     'hashids' => [
