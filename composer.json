@@ -11,10 +11,10 @@
     ],
     "require": {
         "php": "^7.1",
-        "illuminate/database": "~5.5.0|~5.6.0",
-        "illuminate/http": "~5.5.0|~5.6.0",
-        "illuminate/routing": "~5.5.0|~5.6.0",
-        "illuminate/support": "~5.5.0|~5.6.0",
+        "illuminate/database": "~5.5.0|~5.6.0|~5.7.0",
+        "illuminate/http": "~5.5.0|~5.6.0|~5.7.0",
+        "illuminate/routing": "~5.5.0|~5.6.0|~5.7.0",
+        "illuminate/support": "~5.5.0|~5.6.0|~5.7.0",
         "hashids/hashids": "^3.0"
     },
     "require-dev": {
